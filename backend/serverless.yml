@@ -1,0 +1,25 @@
+service: mesh-converter
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: ${opt:stage, 'dev'}
+  lambdaHashingVersion: '20201221'
+  region: us-west-1
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  serverless-offline:
+    host: 0.0.0.0
+    httpPort: 3003
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: mesh/convert
+          method: get

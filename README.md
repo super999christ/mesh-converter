@@ -5,6 +5,18 @@ This project is bootstrapped with React, MaterialUI, Three.js, Python3, Serverle
 Users can upload *.mesh files to the server, convert them to *.stl format and render STL data on UI.
 (Three.js library doesn't support mesh files to be rendered on UI so it must be converted to STL format and then rendered)
 
+## Running the Project
+### `Frontend` (http://localhost:3000)
+```
+cd frontend
+npm start
+```
+### `Backend` (http://localhost:3003)
+```
+cd backend
+serverless offline
+```
+
 ## Backend APIs (http://localhost:3003/dev/mesh)
 ### `/upload`
 Users can upload *.mesh file to the server.

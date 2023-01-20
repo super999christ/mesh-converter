@@ -20,3 +20,4 @@ It uses Cloud MongoDB for storing mesh asset urls
 Meshes can be stored in AWS S3 bucket or server's hard drive according to configuration.
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/110137624/213710413-be0258d9-55c7-4749-a8dc-d92194a3c76f.png)

@@ -1,8 +1,11 @@
 service: mesh-converter
 
+package:
+  individually: true
+
 plugins:
   - serverless-offline
-
+  - serverless-dotenv-plugin
 provider:
   name: aws
   runtime: python3.6
@@ -23,3 +26,21 @@ functions:
       - http:
           path: mesh/convert
           method: get
+  upload:
+    handler: handler.upload
+    events:
+      - http:
+          path: mesh/upload
+          method: post
+  get_asset:
+    handler: handler.get_asset
+    events:
+      - http:
+          path: mesh/get_asset
+          method: get
+  get_asset_list:
+    handler: handler.get_asset_list
+    events:
+      - http:
+          path: mesh/get_asset_list
+          method: get          

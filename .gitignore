@@ -2,4 +2,6 @@ frontend/node_modules
 backend/.serverless
 backend/__pycache__
 backend/node_modules
+backend/.env
 backend/package-lock.json
+frontend/node_modules

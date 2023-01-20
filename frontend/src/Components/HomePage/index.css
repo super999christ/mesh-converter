@@ -1,0 +1,8 @@
+.page-container {
+  padding: 10px;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
